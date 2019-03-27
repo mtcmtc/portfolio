@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 100%;
-    background-color: #000;
   }
 
   * {
