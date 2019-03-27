@@ -1,28 +1,64 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+// import createGlobalStyle helper
+import { createGlobalStyle } from 'styled-components'
+
+
+// Import pages
+ import Home from './pages/Home'
+// import Resume from './pages/Resume'
+// import Projects from './pages/Projects'
+// import Contact from './pages/Contact'
+
+// Import nav component
+import Nav from './components/Nav'
+
+//Global style
+const GlobalStyle = createGlobalStyle`
+
+  html, body, #app, .wrapper {
+    min-height: 100vh;
+    height:100%;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: #000;
+  }
+
+  * {
+    &,
+    &::after,
+    &::before {
+      box-sizing: inherit;
+    }
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    font: 1rem / 1.414 arial, sans-serif;
+  }
+`
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <GlobalStyle />
+        <Nav />
+        <div className="wrapper">
+          { <Route exact={true} path="/" component={Home}/> }
+          {/* <Route path="/resume" component={Resume}/> */}
+          {/* <Route path="/projects" component={Projects}/> */}
+          {/* <Route path="/contact" component={Contact}/> */}
+
+        </div>
+      </Router>
     );
   }
 }
-
-export default App;
