@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>A simple website built with React</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="handheldFriendly" content="true">
+  <meta name="description" content="Description for your website">
+  <meta name="subject" content="Name of the website">
+  <meta name="language" content="Enlish">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="classification" content="">
+  <meta name="url" content="https://www.website-url.com">
+  <meta name="identifier-URL" content="https://www.website-url.com">
+  <meta name="coverage" content="Worldwide">
+  <meta name="rating" content="General">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Favicons
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicon/manifest.json">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  -->
+
+  <!-- Facebook & Google+ OpenGraph tags -->
+  <meta property="og:title" content="Name of the website">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Description for your website">
+  <meta property="og:image" content="https://www.website-url.com/images/facebook-card-image.jpg"><!-- photo -->
+  <meta property="og:url" content="https://www.website-url.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Name of the website">
+  <meta property="article:author" content="Your name">
+
+  <!-- Twitter cards tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@username">
+  <meta name="twitter:url" content="https://www.website-url.com">
+  <meta name="twitter:title" content="Name of the website">
+  <meta name="twitter:description" content="Description for your website">
+  <meta name="twitter:image" content="https://www.website-url.com/images/twitter-summary-card-image.jpg" />
+
+  <script type="application/ld+json">
+   {
+     "@context": "http://schema.org/",
+     "name": "Website name",
+     "url": "https://www.website-url.com",
+     "logo": "https://www.website-url.com/images/website-logo.png",
+     "contactPoint": {
+       "@type":"ContactPoint",
+       "contactType":"customer service",
+       "areaServed":"Worldwide",
+       "availableLanguage":"English",
+       "email":"info@email.com"
+     }
+   }
+ </script>
+</head>
+
+<body>
+  <!-- Container for React -->
+  <div id="root"></div>
+</body>
 </html>
