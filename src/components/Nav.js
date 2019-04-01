@@ -113,19 +113,19 @@ export default class Nav extends Component {
           <NavButton onClick={this.toggleMenu}>Menu</NavButton>
           <NavList>
             <NavItem>
-              <a href="/portfolio/">Home</a>
+              <a href="/">Home</a>
             </NavItem>
 
             <NavItem>
-              <a href="/portfolio/resume">Resume</a>
+              <a href="/resume/">Resume</a>
             </NavItem>
 
             <NavItem>
-              <a href="/portfolio/projects">Projects</a>
+              <a href="/projects/">Projects</a>
             </NavItem>
 
             <NavItem>
-              <a href="/portfolio/contact">Contact</a>
+              <a href="/contact/">Contact</a>
             </NavItem>
           </NavList>
         </NavWrapper>
