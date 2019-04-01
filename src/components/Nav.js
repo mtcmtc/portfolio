@@ -103,7 +103,6 @@ export default class Nav extends Component {
       <Header>
         <NavWrapper isOpen={this.state.show}>
           <NavButton onClick={this.toggleMenu}>Menu</NavButton>
-
           <NavList>
             <NavItem>
               <a href="/portfolio/">Home</a>
