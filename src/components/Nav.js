@@ -1,7 +1,7 @@
 //Nav.js
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components'
-
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 //Import Button component
 import Button from './Button'
 
@@ -32,7 +32,7 @@ const NavWrapper = styled.nav`
         position: absolute;
         top:64px;
         max-height: 1000px;
-        transition: all 1s ease-in-out;
+        transition: max-height 1s ease-in-out;
       }
     `}
   }
@@ -47,7 +47,6 @@ const NavList = styled.ul`
   list-style-type: none;
   height: auto;
   max-height: 0;
-
 
   @media (min-width: 480px) {
     flex-direction: row;
@@ -113,19 +112,19 @@ export default class Nav extends Component {
           <NavButton onClick={this.toggleMenu}>Menu</NavButton>
           <NavList>
             <NavItem>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </NavItem>
 
             <NavItem>
-              <a href="/resume/">Resume</a>
+              <Link to="/resume/">Resume</Link>
             </NavItem>
 
             <NavItem>
-              <a href="/projects/">Projects</a>
+              <Link to="/projects/">Projects</Link>
             </NavItem>
 
             <NavItem>
-              <a href="/contact/">Contact</a>
+              <Link to="/contact/">Contact</Link>
             </NavItem>
           </NavList>
         </NavWrapper>

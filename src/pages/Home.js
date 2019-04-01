@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
 
 // Import Container component
 import Button from './../components/Button'
@@ -57,7 +58,7 @@ const HomeWrapper = styled(Section)`
 `
 
 // Using Button component but changing the element to 'a'
-const HomeButton = Button.withComponent('a')
+const HomeButton = Button.withComponent(Link)
 
 export default class Home extends React.Component {
   render () {
@@ -66,9 +67,9 @@ export default class Home extends React.Component {
         <Container>
           <Heading>Michael Chen</Heading>
 
-          <Subheading>Designer & developer</Subheading>
+          <Subheading>Web Developer</Subheading>
 
-          <HomeButton href="/portfolio">My work</HomeButton>
+          <HomeButton to="/projects/">My work</HomeButton>
         </Container>
       </HomeWrapper>
     )

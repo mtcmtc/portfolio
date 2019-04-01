@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import createHashHistory from 'history/createHashHistory';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -47,12 +47,12 @@ const GlobalStyle = createGlobalStyle`
     font: 1rem / 1.414 arial, sans-serif;
   }
 `
-const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
+
 
 export default class App extends Component {
   render() {
     return (
-      <Router history={hashHistory}>
+      <Router basename={"/portfolio"}>
         <GlobalStyle />
         <Nav />
         <div className="wrapper">
