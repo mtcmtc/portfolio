@@ -4,18 +4,17 @@ import { Link } from 'react-router';
 
 // Import Container component
 import Button from './../components/Button'
+
+//Import Container component
 import Container from './../components/Container'
+
+//Import Section component
+import Section from './../components/Section'
 
 // Import Typography components
 import { Heading, Subheading } from './../components/Typography'
 
-const HomeWrapper = styled.section`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+const HomeWrapper = styled(Section)`
   background-image: url(https://source.unsplash.com/t3zrEm88ehc/480x800);
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,8 +48,6 @@ const HomeWrapper = styled.section`
   }
 
   ${Container} {
-    position: relative;
-    z-index: 2;
     color: #fff;
   }
 
@@ -65,9 +62,9 @@ const HomeButton = Button.withComponent('a')
 export default class Home extends React.Component {
   render () {
     return (
-      <HomeWrapper>
+      <HomeWrapper centered>
         <Container>
-          <Heading>Thomas Paine</Heading>
+          <Heading>Michael Chen</Heading>
 
           <Subheading>Designer & developer</Subheading>
 

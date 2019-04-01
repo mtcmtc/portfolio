@@ -9,9 +9,9 @@ import { createGlobalStyle } from 'styled-components'
 
 // Import pages
  import Home from './pages/Home'
-// import Resume from './pages/Resume'
-// import Projects from './pages/Projects'
-// import Contact from './pages/Contact'
+ import Resume from './pages/Resume'
+ import Projects from './pages/Projects'
+ import Contact from './pages/Contact'
 
 // Import nav component
 import Nav from './components/Nav'
@@ -52,9 +52,9 @@ export default class App extends Component {
         <Nav />
         <div className="wrapper">
           { <Route exact={true} path="/portfolio/" component={Home}/> }
-          {/* <Route path="/portfolio/resume" component={Resume}/> */}
-          {/* <Route path="/portfolio/projects" component={Projects}/> */}
-          {/* <Route path="/portfolio/contact" component={Contact}/> */}
+          { <Route path="/portfolio/resume" component={Resume}/> }
+          { <Route path="/portfolio/projects" component={Projects}/> }
+          { <Route path="/portfolio/contact" component={Contact}/> }
 
         </div>
       </Router>
