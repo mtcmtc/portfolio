@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://mtcmtc.github.io/portfolio",
+  "homepage": "https://mikechen.dev/react-router-test",
   "private": true,
   "dependencies": {
     "react": "^16.8.5",
