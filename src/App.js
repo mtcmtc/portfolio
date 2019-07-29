@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
 export default class App extends Component {
   render() {
     return (
-      <Router basename={"react-router-test/"}>
+      <Router basename={"/react-router-test/"}>
         <GlobalStyle />
         <Nav />
         <div className="wrapper">
